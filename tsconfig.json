@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true // Đảm bảo tên file luôn nhất quán về chữ hoa chữ thường
   },
   "include": [
-    "src/**/*.ts" // Chỉ bao gồm các file TypeScript trong thư mục src
+    "src/**/*" // Chỉ bao gồm các file TypeScript trong thư mục src
   ],
   "exclude": [
     "node_modules", // Loại trừ thư mục node_modules
