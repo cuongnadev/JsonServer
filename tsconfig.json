@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Chuyển mã nguồn sang ES6
+    "module": "CommonJS", // Sử dụng CommonJS cho module system (dành cho Node.js)
+    "strict": true, // Bật chế độ strict checking cho mã nguồn
+    "rootDir": "./src", // Thư mục chứa mã nguồn TypeScript của bạn
+    "outDir": "./dist", // Thư mục xuất ra mã JavaScript đã biên dịch
+    "esModuleInterop": true, // Cho phép import các module không phải ES6 như CommonJS
+    "resolveJsonModule": true, // Cho phép import các file JSON như module
+    "skipLibCheck": true, // Bỏ qua việc kiểm tra các thư viện (giảm thiểu lỗi từ node_modules)
+    "forceConsistentCasingInFileNames": true // Đảm bảo tên file luôn nhất quán về chữ hoa chữ thường
+  },
+  "include": [
+    "src/**/*.ts" // Chỉ bao gồm các file TypeScript trong thư mục src
+  ],
+  "exclude": [
+    "node_modules", // Loại trừ thư mục node_modules
+    "dist" // Loại trừ thư mục dist (nơi chứa các file JavaScript biên dịch)
+  ]
+}
